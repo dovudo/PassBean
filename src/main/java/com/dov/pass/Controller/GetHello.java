@@ -12,10 +12,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class GetHello {
     /*HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.currentRequestAttributes())
             .getRequest();
-
     String ip = request.getRemoteAddr();*/
-    private final static Logger log = LoggerFactory.getLogger(GetHello.class);
 
+    private final static Logger log = LoggerFactory.getLogger(GetHello.class);
     @RequestMapping("hello")
     @ResponseBody
     public String home() {
@@ -23,4 +22,6 @@ public class GetHello {
         return "Hello World!";
     }
 }
+
+
 
