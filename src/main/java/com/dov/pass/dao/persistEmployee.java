@@ -2,7 +2,7 @@ package com.dov.pass.dao;
 
 import com.dov.pass.service.employee;
 
-public interface dbpersist {
+public interface persistEmployee {
 
     public void save(employee em);
 

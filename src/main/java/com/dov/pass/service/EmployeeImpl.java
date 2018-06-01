@@ -1,7 +1,6 @@
 package com.dov.pass.service;
 
-import com.dov.pass.dao.dbpersist;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import com.dov.pass.dao.persistEmployee;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -9,8 +8,8 @@ import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
 @Transactional
-@Repository
-public class dbImpl implements dbpersist {
+@Repository("employee")
+public class EmployeeImpl implements persistEmployee {
     @PersistenceContext
     private EntityManager em;
 

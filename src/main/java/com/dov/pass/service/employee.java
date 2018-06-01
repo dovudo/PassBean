@@ -1,10 +1,13 @@
 package com.dov.pass.service;
 
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "employee", schema = "test")
-public class employee {
+public class employee  {
+
 
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
@@ -12,13 +15,12 @@ public class employee {
     private int id;
 
     @Column(name = "first_name")
+    @NotNull
     private String firstName;
 
     @Column(name = "last_name")
+    @NotNull
     private String lastName;
-
-    @Column(name = "salary")
-    private int salary;
 
     public employee() {
     }
@@ -50,14 +52,6 @@ public class employee {
 
     public void setLastName(String last_name) {
         this.lastName = last_name;
-    }
-
-    public int getSalary() {
-        return salary;
-    }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
     }
 
 }
