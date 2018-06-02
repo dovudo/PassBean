@@ -18,12 +18,12 @@ public class employee  {
     @NotNull
     private String firstName;
 
+    public employee() {
+    }
+
     @Column(name = "last_name")
     @NotNull
     private String lastName;
-
-    public employee() {
-    }
 
     public employee(String firstName, String lastName){
         this.firstName = firstName;

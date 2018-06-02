@@ -8,10 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.*;
 
 
 @Controller
@@ -20,14 +17,13 @@ public class Connect {
     public static final Logger log = LoggerFactory.getLogger(Connect.class);
 
     @Autowired
-    private static persistEmployee ei;
+    private persistEmployee ei;
 
     @RequestMapping(path = "addempl",
-                    method = RequestMethod.POST,
-                    consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+            method = RequestMethod.POST,
+            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     @ResponseStatus(HttpStatus.OK)
     public void addempl(@RequestParam("firstname") String fname, @RequestParam("lastname") String lname){
-
         employee emp = new employee();
         log.info("add to bd {} {}",fname,lname);
         emp.setFirstName(fname);
