@@ -19,6 +19,7 @@ public class employee  {
     private String firstName;
 
     public employee() {
+
     }
 
     @Column(name = "last_name")
@@ -53,5 +54,4 @@ public class employee  {
     public void setLastName(String last_name) {
         this.lastName = last_name;
     }
-
 }

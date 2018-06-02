@@ -31,6 +31,15 @@ public class Connect {
         ei.save(emp);
     }
 
+    @RequestMapping(path = "getById",
+                    method = RequestMethod.GET)
+    @ResponseBody
+    public String getById(@RequestParam("id") Integer id){
+        employee emp = ei.getById(id);
+        log.info("Get request data by id {} \nData: {} {}",id,emp.getFirstName(),emp.getLastName() );
+        return emp.getFirstName() + "  " + emp.getLastName();
+    }
+
     @RequestMapping(path = "getlogin",
             method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.OK)

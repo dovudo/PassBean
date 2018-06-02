@@ -20,11 +20,11 @@ public class EmployeeImpl implements persistEmployee {
 
     @Override
     public employee getByLogin(String login) {
-        return null;
+        return em.find(employee.class,login);
     }
 
     @Override
     public employee getById(int Id) {
-        return null;
+       return em.find(employee.class,Id);
     }
 }
