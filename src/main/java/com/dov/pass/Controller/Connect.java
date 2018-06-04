@@ -2,7 +2,8 @@ package com.dov.pass.Controller;
 
 
 import com.dov.pass.dao.persistEmployee;
-import com.dov.pass.service.employee;
+import com.dov.pass.dao.employee;
+import com.google.gson.Gson;
 import org.slf4j.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,9 +13,11 @@ import org.springframework.web.bind.annotation.*;
 
 
 @Controller
+@CrossOrigin
 @RequestMapping("/connect")
 public class Connect {
     public static final Logger log = LoggerFactory.getLogger(Connect.class);
+    private Gson gson = new Gson();
 
     @Autowired
     private persistEmployee ei;
@@ -35,9 +38,11 @@ public class Connect {
                     method = RequestMethod.GET)
     @ResponseBody
     public String getById(@RequestParam("id") Integer id){
+      /* if (id <= 0 || id.getClass() != Integer.class || id == null )
+            return "Failed request";*/
         employee emp = ei.getById(id);
         log.info("Get request data by id {} \nData: {} {}",id,emp.getFirstName(),emp.getLastName() );
-        return emp.getFirstName() + "  " + emp.getLastName();
+        return gson.toJson(emp);
     }
 
     @RequestMapping(path = "getlogin",

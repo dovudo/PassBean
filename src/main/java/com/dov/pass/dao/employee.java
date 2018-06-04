@@ -1,8 +1,11 @@
-package com.dov.pass.service;
+package com.dov.pass.dao;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "employee", schema = "test")
@@ -14,23 +17,34 @@ public class employee  {
     @Column(name = "id", unique = true, nullable = false)
     private int id;
 
+    @Email
+    @NotNull
+    private String email;
+
+    public employee() {
+    }
+
     @Column(name = "first_name")
     @NotNull
     private String firstName;
 
-    public employee() {
-
-    }
-
     @Column(name = "last_name")
     @NotNull
     private String lastName;
+
 
     public employee(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
     public int getId() {
         return id;
     }
