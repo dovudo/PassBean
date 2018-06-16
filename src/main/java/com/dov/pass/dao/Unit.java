@@ -11,6 +11,7 @@ import javax.validation.constraints.Size;
 @Table(name = "unit", schema = "test")
 public class Unit {
 
+
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     @Column(name = "id", unique = true, nullable = false)
@@ -18,12 +19,15 @@ public class Unit {
 
     @Email
     @NotNull
+    @Column(name="email",unique = true,nullable = false)
     private String email;
 
     @NotNull
+    @Column(name = "hash",length = 64)
     private String hash;
 
     @NotEmpty
+    @Column(name = "data",nullable = false)
     private String data;
 
     public int getId() {

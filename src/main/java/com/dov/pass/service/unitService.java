@@ -4,8 +4,7 @@ import com.dov.pass.dao.Unit;
 import com.dov.pass.dao.unitInterface;
 import org.springframework.stereotype.Repository;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import javax.persistence.*;
 import javax.transaction.Transactional;
 
 
@@ -27,7 +26,7 @@ public class unitService implements unitInterface {
     }
 
     @Override
-    public Unit getByEmail(String email) {
-        return em.find(Unit.class, email);
+    public Unit getByEmail(String email) throws NoResultException {
+        return (Unit) em.createQuery("SELECT u FROM Unit u WHERE u.email = :findemail").setParameter("findemail", email).getSingleResult();
     }
 }
