@@ -1,5 +1,8 @@
 package com.dov.pass.service;
 
+import com.dov.pass.dao.unitInterface;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Random;
@@ -7,6 +10,9 @@ import java.util.Random;
 public class Token {
 
     private static String ip = null;
+
+    @Autowired
+    private static unitInterface ui;
 
     static {
         try {
@@ -17,7 +23,11 @@ public class Token {
     }
 
     public static String getToken(int leg){
-        return ip + "/#" + getRndString(leg);
+        String ourToken = getRndString(leg);
+        //Check collision
+        if(ui.checkExistByHash(ourToken) == false)
+        getToken(leg);
+        return ip + "/#" + ourToken;
     }
 
     //Generate some random token

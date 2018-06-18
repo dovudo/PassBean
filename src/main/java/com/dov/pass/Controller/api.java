@@ -29,9 +29,14 @@ public class api {
                     method = RequestMethod.POST)
     @ResponseBody
     public String login(@RequestBody String emailJson){
+
+        String email = null;
+
         try{
             unit = gson.fromJson(emailJson,Unit.class);
-            unit = ui.getByEmail(unit.getEmail());
+            email = unit.getEmail();
+
+            //unit = ui.getByEmail(unit.getEmail());
             log.info("Got request from LOGINBYEMAIL " + gson.toJson(unit));
         }
         catch (NoResultException e)
@@ -43,6 +48,11 @@ public class api {
         }
         log.info("Got request by email ");
 
+        //if not exist entity
+        if(ui.checkExistByEmail(unit.getEmail())){
+            unit.setEmail(email);
+            unit.setHash(Token.getToken(16));
+        }
         return gson.toJson(unit);
     }
 
