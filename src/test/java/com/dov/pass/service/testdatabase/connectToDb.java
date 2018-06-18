@@ -19,7 +19,7 @@ import java.util.Random;
 public class connectToDb {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
-    private static final String URL = "http://localhost:8080/connect/addempl";
+    private static final String URL = "http://192.168.0.104:8080/connect/addempl";
     private static final String USER_AGENT = "Mozilla/5.0";
     private static HttpPost post = new HttpPost(URL);
     private static HttpClient client = new DefaultHttpClient();

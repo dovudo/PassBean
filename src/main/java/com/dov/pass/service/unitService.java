@@ -26,7 +26,7 @@ public class unitService implements unitInterface {
     }
 
     @Override
-    public Unit getByEmail(String email) throws NoResultException {
+    public Unit getByEmail(String email) throws NoResultException, Exception{
         return (Unit) em.createQuery("SELECT u FROM Unit u WHERE u.email = :findemail").setParameter("findemail", email).getSingleResult();
     }
 }

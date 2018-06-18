@@ -3,14 +3,15 @@ package com.dov.pass.Controller;
 
 import com.dov.pass.dao.Unit;
 import com.dov.pass.dao.unitInterface;
+import com.dov.pass.service.Token;
 import com.google.gson.Gson;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.mail.MessagingException;
 import javax.persistence.NoResultException;
 
 @Controller
@@ -22,26 +23,39 @@ public class api {
     @Autowired
     unitInterface ui;
 
-    Gson gson = new Gson();
-
+    private Gson gson = new Gson();
+    private Unit unit = null;
     @RequestMapping(path = "loginbyemail",
-                    method = RequestMethod.POST,
-                    consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+                    method = RequestMethod.POST)
     @ResponseBody
-    public String login(@RequestParam("e") String email){
-        Unit unit = null;
-        log.info("Got request from LOGINBYEMAIL " + email);
+    public String login(@RequestBody String emailJson){
         try{
-            unit = ui.getByEmail(email);
+            unit = gson.fromJson(emailJson,Unit.class);
+            unit = ui.getByEmail(unit.getEmail());
+            log.info("Got request from LOGINBYEMAIL " + gson.toJson(unit));
         }
         catch (NoResultException e)
         {
-            return "Can't found entity";
+            return "{\"status\":\"404\"}";
         }
         catch (Exception e){
             log.warn(e.getMessage());
         }
         log.info("Got request by email ");
+
         return gson.toJson(unit);
+    }
+
+    @RequestMapping(path = "test",
+                    method = RequestMethod.GET)
+    @ResponseBody
+    public String test(){
+        return  "test valid";
+    }
+
+    @RequestMapping("getToken")
+    @ResponseBody
+    public String getToken(){
+        return Token.getToken(16);
     }
 }
