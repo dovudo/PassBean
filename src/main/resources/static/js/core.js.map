@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "core.js",
+  "sourceRoot": "",
+  "sources": [
+    "core.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAM;IAAN,MAAA,QAAA;MAOS,OAAN,IAAM,CAAA,CAAA;QAEL,OAAO,CAAC,GAAR,CAAY,SAAZ;eACA,IAAC,CAAA,QAAD,CAAU,IAAC,CAAA,WAAX,EAAwB,OAAxB,EAAiC,CAAA,CAAA,GAAA;iBAE/B,IAAC,CAAA,IAAD,CAAM,IAAC,CAAA,MAAD,GAAU,IAAC,CAAA,QAAjB,EAA2B;YAAE,CAAA,EAAG,IAAC,CAAA,UAAU,CAAC;UAAjB,CAA3B,EAAqD,CAAC,IAAD,CAAA,GAAA;mBAEnD,KAAA,CAAM,IAAN;UAFmD,CAArD;QAF+B,CAAjC;MAHK;;MASI,OAAV,QAAU,CAAC,OAAD,EAAU,KAAV,EAAiB,QAAjB,CAAA;eAET,OAAO,CAAC,gBAAR,CAAyB,KAAzB,EAAgC,QAAhC;MAFS;;MAIJ,OAAN,IAAM,CAAC,GAAD,EAAM,IAAN,EAAY,QAAZ,CAAA;AAEL,YAAA;QAAA,GAAA,GAAM,IAAI,cAAJ,CAAA;QACN,GAAG,CAAC,IAAJ,CAAS,MAAT,EAAiB,GAAjB,EAAsB,IAAtB;QACA,GAAG,CAAC,IAAJ,CAAS,IAAI,CAAC,SAAL,CAAe,IAAf,CAAT;eACA,GAAG,CAAC,kBAAJ,GAAyB,CAAA,CAAA,GAAA;UAEvB,IAAG,GAAG,CAAC,UAAJ,KAAkB,CAArB;mBAA4B,QAAA,CAAS,GAAG,CAAC,YAAb,EAA5B;;QAFuB;MALpB;;IApBT;;IAEE,OAAC,CAAA,MAAD,GAAS;;IACT,OAAC,CAAA,QAAD,GAAW;;IACX,OAAC,CAAA,UAAD,GAAa,QAAQ,CAAC,aAAT,CAAuB,yBAAvB;;IACb,OAAC,CAAA,WAAD,GAAc,QAAQ,CAAC,aAAT,CAAuB,oBAAvB;;;;;;EAwBhB,OAAO,CAAC,IAAR,CAAA;AA7BA",
+  "sourcesContent": [
+    "class Passboy\r\n\r\n  @server: \"http://192.168.0.104:8080\"\r\n  @apiLogin: \"/api/loginbyemail\"\r\n  @loginInput: document.querySelector \".wrap-login-input input\"\r\n  @loginButton: document.querySelector \".wrap-login-button\"\r\n\r\n  @init: () ->\r\n\r\n    console.log \"Init...\"\r\n    @listener @loginButton, \"click\", () =>\r\n\r\n      @post @server + @apiLogin, { e: @loginInput.value }, (data) =>\r\n\r\n        alert data\r\n\r\n  @listener: (element, event, callback) ->\r\n\r\n    element.addEventListener event, callback\r\n\r\n  @post: (url, data, callback) ->\r\n\r\n    xhr = new XMLHttpRequest()\r\n    xhr.open \"POST\", url, true\r\n    xhr.send JSON.stringify data\r\n    xhr.onreadystatechange = () =>\r\n\r\n      if xhr.readyState is 4 then callback xhr.responseText\r\n\r\nPassboy.init()"
+  ]
+}

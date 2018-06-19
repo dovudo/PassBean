@@ -879,3 +879,603 @@ List of constraint violations:[
 2018-06-19 11:20:00.043  INFO 6728 --- [Thread-5] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@12359a82: startup date [Tue Jun 19 11:09:14 EEST 2018]; root of context hierarchy
 2018-06-19 11:20:00.114  INFO 6728 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2018-06-19 11:20:00.174  INFO 6728 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-06-19 11:28:08.240  INFO 2536 --- [main] com.dov.pass.SampleController            : Starting SampleController on null with PID 2536 (/home/dov/IdeaProjects/passbean/out/production/classes started by dov in /home/dov/IdeaProjects/passbean)
+2018-06-19 11:28:08.285  INFO 2536 --- [main] com.dov.pass.SampleController            : No active profile set, falling back to default profiles: default
+2018-06-19 11:28:08.568  INFO 2536 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@74bf1791: startup date [Tue Jun 19 11:28:08 EEST 2018]; root of context hierarchy
+2018-06-19 11:28:12.684  INFO 2536 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$48e85911] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-19 11:28:13.517  INFO 2536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-19 11:28:13.587  INFO 2536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-19 11:28:13.588  INFO 2536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-19 11:28:13.610  INFO 2536 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-06-19 11:28:13.886  INFO 2536 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-19 11:28:13.887  INFO 2536 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5318 ms
+2018-06-19 11:28:15.602  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-19 11:28:15.611  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-19 11:28:15.612  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-19 11:28:15.613  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-19 11:28:15.614  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-19 11:28:15.616  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-06-19 11:28:15.617  INFO 2536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-06-19 11:28:15.878  INFO 2536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-19 11:28:16.233  INFO 2536 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc4.Jdbc4Connection.getNetworkTimeout() is not yet implemented.)
+2018-06-19 11:28:16.456  INFO 2536 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-19 11:28:16.580  INFO 2536 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:28:16.619  INFO 2536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-19 11:28:16.859  INFO 2536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2018-06-19 11:28:16.864  INFO 2536 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-19 11:28:16.967  INFO 2536 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-19 11:28:17.352  INFO 2536 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-19 11:28:17.386  INFO 2536 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-19 11:28:17.390  INFO 2536 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@1e1237ab
+2018-06-19 11:28:21.669  INFO 2536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:28:23.134  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@74bf1791: startup date [Tue Jun 19 11:28:08 EEST 2018]; root of context hierarchy
+2018-06-19 11:28:23.283  WARN 2536 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-19 11:28:23.422  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getById],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.Connect.getById(java.lang.Integer)
+2018-06-19 11:28:23.439  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getlogin],methods=[POST]}" onto public void com.dov.pass.Controller.Connect.login(java.lang.String,java.lang.String)
+2018-06-19 11:28:23.442  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/addempl],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public void com.dov.pass.Controller.Connect.addempl(java.lang.String,java.lang.String)
+2018-06-19 11:28:23.448  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.getData(java.lang.String)
+2018-06-19 11:28:23.454  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/loginbyemail],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.login(java.lang.String)
+2018-06-19 11:28:23.473  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.testController.getData(java.lang.String)
+2018-06-19 11:28:23.486  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getToken]}" onto public java.lang.String com.dov.pass.Controller.testController.getToken()
+2018-06-19 11:28:23.488  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/testmail]}" onto public void com.dov.pass.Controller.testController.testmail()
+2018-06-19 11:28:23.490  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/test],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.testController.test()
+2018-06-19 11:28:23.517  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:28:23.519  INFO 2536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-19 11:28:23.778  INFO 2536 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:28:23.780  INFO 2536 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:28:24.074  INFO 2536 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:28:24.149  INFO 2536 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-06-19 11:28:25.826  INFO 2536 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:28:25.829  INFO 2536 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:28:25.832  INFO 2536 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:28:26.267  INFO 2536 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-19 11:28:26.271  INFO 2536 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-19 11:28:26.303  INFO 2536 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-19 11:28:26.419  INFO 2536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-19 11:28:26.429  INFO 2536 --- [main] com.dov.pass.SampleController            : Started SampleController in 20.331 seconds (JVM running for 23.575)
+2018-06-19 11:28:30.183  INFO 2536 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-19 11:28:30.186  INFO 2536 --- [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-19 11:28:30.222  INFO 2536 --- [RMI TCP Connection(10)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-06-19 11:30:59.680  INFO 2536 --- [http-nio-192.168.0.101-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-19 11:31:10.592 ERROR 2536 --- [http-nio-192.168.0.101-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is javax.persistence.NoResultException: No entity found for query] with root cause
+
+javax.persistence.NoResultException: No entity found for query
+	at org.hibernate.query.internal.AbstractProducedQuery.getSingleResult(AbstractProducedQuery.java:1465) ~[hibernate-core-5.2.16.Final.jar:5.2.16.Final]
+	at com.dov.pass.service.unitService.getEntityByHash(unitService.java:52) ~[classes/:na]
+	at com.dov.pass.service.unitService$$FastClassBySpringCGLIB$$507aca0b.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:204) ~[spring-core-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:747) ~[spring-aop-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:139) ~[spring-tx-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:294) ~[spring-tx-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:98) ~[spring-tx-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:185) ~[spring-aop-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at com.dov.pass.service.unitService$$EnhancerBySpringCGLIB$$2b87f313.getEntityByHash(<generated>) ~[classes/:na]
+	at com.dov.pass.Controller.testController.getData(testController.java:58) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:870) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:776) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:881) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855) ~[spring-webmvc-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) ~[spring-boot-actuator-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) ~[spring-boot-actuator-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) ~[spring-boot-actuator-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:84) ~[spring-boot-actuator-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1135) [na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) [na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.28.jar:8.5.28]
+	at java.base/java.lang.Thread.run(Thread.java:844) [na:na]
+
+2018-06-19 11:35:43.911  INFO 2536 --- [Thread-5] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@74bf1791: startup date [Tue Jun 19 11:28:08 EEST 2018]; root of context hierarchy
+2018-06-19 11:35:43.929  INFO 2536 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-06-19 11:35:43.944  INFO 2536 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-06-19 11:35:56.834  INFO 3282 --- [main] com.dov.pass.SampleController            : Starting SampleController on null with PID 3282 (/home/dov/IdeaProjects/passbean/out/production/classes started by dov in /home/dov/IdeaProjects/passbean)
+2018-06-19 11:35:56.856  INFO 3282 --- [main] com.dov.pass.SampleController            : No active profile set, falling back to default profiles: default
+2018-06-19 11:35:57.053  INFO 3282 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39ac0c0a: startup date [Tue Jun 19 11:35:57 EEST 2018]; root of context hierarchy
+2018-06-19 11:36:03.060  INFO 3282 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$228df497] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-19 11:36:04.410  INFO 3282 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-19 11:36:04.486  INFO 3282 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-19 11:36:04.488  INFO 3282 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-19 11:36:04.513  INFO 3282 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-06-19 11:36:04.878  INFO 3282 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-19 11:36:04.881  INFO 3282 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7831 ms
+2018-06-19 11:36:07.137  INFO 3282 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-19 11:36:07.149  INFO 3282 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-19 11:36:07.151  INFO 3282 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-19 11:36:07.152  INFO 3282 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-19 11:36:07.153  INFO 3282 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-19 11:36:07.154  INFO 3282 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-06-19 11:36:07.160  INFO 3282 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-06-19 11:36:07.522  INFO 3282 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-19 11:36:07.874  INFO 3282 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc4.Jdbc4Connection.getNetworkTimeout() is not yet implemented.)
+2018-06-19 11:36:08.085  INFO 3282 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-19 11:36:08.266  INFO 3282 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:36:08.362  INFO 3282 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-19 11:36:08.641  INFO 3282 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2018-06-19 11:36:08.651  INFO 3282 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-19 11:36:08.796  INFO 3282 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-19 11:36:09.260  INFO 3282 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-19 11:36:09.315  INFO 3282 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-19 11:36:09.322  INFO 3282 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@48581a3b
+2018-06-19 11:36:15.069  INFO 3282 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:36:16.679  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39ac0c0a: startup date [Tue Jun 19 11:35:57 EEST 2018]; root of context hierarchy
+2018-06-19 11:36:16.783  WARN 3282 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-19 11:36:16.875  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/addempl],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public void com.dov.pass.Controller.Connect.addempl(java.lang.String,java.lang.String)
+2018-06-19 11:36:16.880  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getById],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.Connect.getById(java.lang.Integer)
+2018-06-19 11:36:16.882  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getlogin],methods=[POST]}" onto public void com.dov.pass.Controller.Connect.login(java.lang.String,java.lang.String)
+2018-06-19 11:36:16.887  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.getData(java.lang.String)
+2018-06-19 11:36:16.889  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/loginbyemail],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.login(java.lang.String)
+2018-06-19 11:36:16.896  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.testController.getData(java.lang.String)
+2018-06-19 11:36:16.898  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getToken]}" onto public java.lang.String com.dov.pass.Controller.testController.getToken()
+2018-06-19 11:36:16.900  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/testmail]}" onto public void com.dov.pass.Controller.testController.testmail()
+2018-06-19 11:36:16.901  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/test],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.testController.test()
+2018-06-19 11:36:16.923  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:36:16.925  INFO 3282 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-19 11:36:17.040  INFO 3282 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:36:17.042  INFO 3282 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:36:17.270  INFO 3282 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:36:17.353  INFO 3282 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-06-19 11:36:18.583  INFO 3282 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:36:18.589  INFO 3282 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:36:18.595  INFO 3282 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:36:19.135  INFO 3282 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-19 11:36:19.140  INFO 3282 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-19 11:36:19.169  INFO 3282 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-19 11:36:19.367  INFO 3282 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-19 11:36:19.413  INFO 3282 --- [main] com.dov.pass.SampleController            : Started SampleController in 24.392 seconds (JVM running for 26.849)
+2018-06-19 11:36:23.630  INFO 3282 --- [RMI TCP Connection(7)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-19 11:36:23.640  INFO 3282 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-19 11:36:23.782  INFO 3282 --- [RMI TCP Connection(7)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 139 ms
+2018-06-19 11:42:18.725  INFO 4893 --- [main] com.dov.pass.SampleController            : Starting SampleController on null with PID 4893 (/home/dov/IdeaProjects/passbean/out/production/classes started by dov in /home/dov/IdeaProjects/passbean)
+2018-06-19 11:42:18.743  INFO 4893 --- [main] com.dov.pass.SampleController            : No active profile set, falling back to default profiles: default
+2018-06-19 11:42:19.176  INFO 4893 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49c66ade: startup date [Tue Jun 19 11:42:19 EEST 2018]; root of context hierarchy
+2018-06-19 11:42:22.830  INFO 4893 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f740c7b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-19 11:42:23.557  INFO 4893 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-19 11:42:23.619  INFO 4893 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-19 11:42:23.620  INFO 4893 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-19 11:42:23.639  INFO 4893 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-06-19 11:42:23.922  INFO 4893 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-19 11:42:23.927  INFO 4893 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4750 ms
+2018-06-19 11:42:25.826  INFO 4893 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-19 11:42:25.835  INFO 4893 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-19 11:42:25.837  INFO 4893 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-19 11:42:25.838  INFO 4893 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-19 11:42:25.839  INFO 4893 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-19 11:42:25.840  INFO 4893 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-06-19 11:42:25.842  INFO 4893 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-06-19 11:42:26.047  INFO 4893 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-19 11:42:26.361  INFO 4893 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc4.Jdbc4Connection.getNetworkTimeout() is not yet implemented.)
+2018-06-19 11:42:26.553  INFO 4893 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-19 11:42:26.713  INFO 4893 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:42:26.780  INFO 4893 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-19 11:42:26.972  INFO 4893 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2018-06-19 11:42:26.976  INFO 4893 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-19 11:42:27.104  INFO 4893 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-19 11:42:27.401  INFO 4893 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-19 11:42:27.430  INFO 4893 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-19 11:42:27.433  INFO 4893 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@a54acec
+2018-06-19 11:42:32.380  INFO 4893 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:42:33.560  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@49c66ade: startup date [Tue Jun 19 11:42:19 EEST 2018]; root of context hierarchy
+2018-06-19 11:42:33.644  WARN 4893 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-19 11:42:33.716  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/addempl],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public void com.dov.pass.Controller.Connect.addempl(java.lang.String,java.lang.String)
+2018-06-19 11:42:33.721  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getById],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.Connect.getById(java.lang.Integer)
+2018-06-19 11:42:33.722  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getlogin],methods=[POST]}" onto public void com.dov.pass.Controller.Connect.login(java.lang.String,java.lang.String)
+2018-06-19 11:42:33.725  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.getData(java.lang.String)
+2018-06-19 11:42:33.727  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/loginbyemail],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.login(java.lang.String)
+2018-06-19 11:42:33.734  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.testController.getData(java.lang.String)
+2018-06-19 11:42:33.736  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getToken]}" onto public java.lang.String com.dov.pass.Controller.testController.getToken()
+2018-06-19 11:42:33.738  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/testmail]}" onto public void com.dov.pass.Controller.testController.testmail()
+2018-06-19 11:42:33.740  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/test],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.testController.test()
+2018-06-19 11:42:33.752  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:42:33.753  INFO 4893 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-19 11:42:33.881  INFO 4893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:42:33.882  INFO 4893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:42:34.051  INFO 4893 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:42:34.124  INFO 4893 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-06-19 11:42:35.056  INFO 4893 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:42:35.059  INFO 4893 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:42:35.062  INFO 4893 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:42:35.429  INFO 4893 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-19 11:42:35.432  INFO 4893 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-19 11:42:35.456  INFO 4893 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-19 11:42:35.519 ERROR 4893 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:255) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at com.dov.pass.SampleController.main(SampleController.java:8) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:433) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:425) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	... 14 common frames omitted
+
+2018-06-19 11:42:35.531  INFO 4893 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-06-19 11:42:35.601  INFO 4893 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-06-19 11:42:35.613  INFO 4893 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-06-19 11:43:15.599  INFO 5087 --- [main] com.dov.pass.SampleController            : Starting SampleController on null with PID 5087 (/home/dov/IdeaProjects/passbean/out/production/classes started by dov in /home/dov/IdeaProjects/passbean)
+2018-06-19 11:43:15.616  INFO 5087 --- [main] com.dov.pass.SampleController            : No active profile set, falling back to default profiles: default
+2018-06-19 11:43:15.898  INFO 5087 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@be68757: startup date [Tue Jun 19 11:43:15 EEST 2018]; root of context hierarchy
+2018-06-19 11:43:21.186  INFO 5087 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fa4d2137] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-19 11:43:22.467  INFO 5087 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-19 11:43:22.548  INFO 5087 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-19 11:43:22.549  INFO 5087 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-19 11:43:22.578  INFO 5087 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-06-19 11:43:23.060  INFO 5087 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-19 11:43:23.071  INFO 5087 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7170 ms
+2018-06-19 11:43:25.967  INFO 5087 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-19 11:43:25.981  INFO 5087 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-19 11:43:25.991  INFO 5087 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-19 11:43:25.993  INFO 5087 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-19 11:43:25.996  INFO 5087 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-19 11:43:26.000  INFO 5087 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-06-19 11:43:26.011  INFO 5087 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-06-19 11:43:26.465  INFO 5087 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-19 11:43:26.799  INFO 5087 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc4.Jdbc4Connection.getNetworkTimeout() is not yet implemented.)
+2018-06-19 11:43:27.072  INFO 5087 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-19 11:43:27.421  INFO 5087 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:43:27.519  INFO 5087 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-19 11:43:27.937  INFO 5087 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2018-06-19 11:43:27.948  INFO 5087 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-19 11:43:28.150  INFO 5087 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-19 11:43:28.750  INFO 5087 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-19 11:43:28.824  INFO 5087 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-19 11:43:28.842  INFO 5087 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@3c25cfe1
+2018-06-19 11:43:33.750  INFO 5087 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:43:35.174  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@be68757: startup date [Tue Jun 19 11:43:15 EEST 2018]; root of context hierarchy
+2018-06-19 11:43:35.320  WARN 5087 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-19 11:43:35.454  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/addempl],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public void com.dov.pass.Controller.Connect.addempl(java.lang.String,java.lang.String)
+2018-06-19 11:43:35.462  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getById],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.Connect.getById(java.lang.Integer)
+2018-06-19 11:43:35.464  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getlogin],methods=[POST]}" onto public void com.dov.pass.Controller.Connect.login(java.lang.String,java.lang.String)
+2018-06-19 11:43:35.470  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.getData(java.lang.String)
+2018-06-19 11:43:35.472  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/loginbyemail],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.login(java.lang.String)
+2018-06-19 11:43:35.480  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.testController.getData(java.lang.String)
+2018-06-19 11:43:35.482  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getToken]}" onto public java.lang.String com.dov.pass.Controller.testController.getToken()
+2018-06-19 11:43:35.484  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/testmail]}" onto public void com.dov.pass.Controller.testController.testmail()
+2018-06-19 11:43:35.486  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/test],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.testController.test()
+2018-06-19 11:43:35.499  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:43:35.501  INFO 5087 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-19 11:43:35.634  INFO 5087 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:43:35.636  INFO 5087 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:43:35.863  INFO 5087 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:43:35.944  INFO 5087 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-06-19 11:43:37.116  INFO 5087 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:43:37.119  INFO 5087 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:43:37.122  INFO 5087 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:43:37.523  INFO 5087 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-19 11:43:37.527  INFO 5087 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-19 11:43:37.553  INFO 5087 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-19 11:43:37.615 ERROR 5087 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:255) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at com.dov.pass.SampleController.main(SampleController.java:8) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:433) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:425) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	... 14 common frames omitted
+
+2018-06-19 11:43:37.625  INFO 5087 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-06-19 11:43:37.715  INFO 5087 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-06-19 11:43:37.734  INFO 5087 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-06-19 11:45:17.362  INFO 5383 --- [main] com.dov.pass.SampleController            : Starting SampleController on null with PID 5383 (/home/dov/IdeaProjects/passbean/out/production/classes started by dov in /home/dov/IdeaProjects/passbean)
+2018-06-19 11:45:17.370  INFO 5383 --- [main] com.dov.pass.SampleController            : No active profile set, falling back to default profiles: default
+2018-06-19 11:45:17.601  INFO 5383 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a3bc7ed: startup date [Tue Jun 19 11:45:17 EEST 2018]; root of context hierarchy
+2018-06-19 11:45:22.538  INFO 5383 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3458c6f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-19 11:45:23.311  INFO 5383 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-19 11:45:23.372  INFO 5383 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-19 11:45:23.374  INFO 5383 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-19 11:45:23.393  INFO 5383 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-06-19 11:45:23.676  INFO 5383 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-19 11:45:23.678  INFO 5383 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 6076 ms
+2018-06-19 11:45:25.403  INFO 5383 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-19 11:45:25.412  INFO 5383 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-19 11:45:25.414  INFO 5383 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-19 11:45:25.416  INFO 5383 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-19 11:45:25.417  INFO 5383 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-19 11:45:25.419  INFO 5383 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-06-19 11:45:25.421  INFO 5383 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-06-19 11:45:25.608  INFO 5383 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-19 11:45:25.931  INFO 5383 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc4.Jdbc4Connection.getNetworkTimeout() is not yet implemented.)
+2018-06-19 11:45:26.121  INFO 5383 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-19 11:45:26.227  INFO 5383 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:45:26.257  INFO 5383 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-19 11:45:26.404  INFO 5383 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2018-06-19 11:45:26.408  INFO 5383 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-19 11:45:26.537  INFO 5383 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-19 11:45:26.734  INFO 5383 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-19 11:45:26.761  INFO 5383 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-19 11:45:26.764  INFO 5383 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@30aec673
+2018-06-19 11:45:30.851  INFO 5383 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:45:31.976  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@5a3bc7ed: startup date [Tue Jun 19 11:45:17 EEST 2018]; root of context hierarchy
+2018-06-19 11:45:32.059  WARN 5383 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-19 11:45:32.147  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/addempl],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public void com.dov.pass.Controller.Connect.addempl(java.lang.String,java.lang.String)
+2018-06-19 11:45:32.152  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getById],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.Connect.getById(java.lang.Integer)
+2018-06-19 11:45:32.154  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getlogin],methods=[POST]}" onto public void com.dov.pass.Controller.Connect.login(java.lang.String,java.lang.String)
+2018-06-19 11:45:32.159  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.getData(java.lang.String)
+2018-06-19 11:45:32.161  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/loginbyemail],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.login(java.lang.String)
+2018-06-19 11:45:32.167  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.testController.getData(java.lang.String)
+2018-06-19 11:45:32.168  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getToken]}" onto public java.lang.String com.dov.pass.Controller.testController.getToken()
+2018-06-19 11:45:32.170  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/testmail]}" onto public void com.dov.pass.Controller.testController.testmail()
+2018-06-19 11:45:32.171  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/test],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.testController.test()
+2018-06-19 11:45:32.182  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:45:32.183  INFO 5383 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-19 11:45:32.298  INFO 5383 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:45:32.299  INFO 5383 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:45:32.475  INFO 5383 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:45:32.528  INFO 5383 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-06-19 11:45:33.413  INFO 5383 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:45:33.415  INFO 5383 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:45:33.418  INFO 5383 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:45:33.802  INFO 5383 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-19 11:45:33.806  INFO 5383 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-19 11:45:33.830  INFO 5383 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-19 11:45:33.901 ERROR 5383 --- [main] o.apache.catalina.core.StandardService   : Failed to start connector [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:255) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:300) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.0.4.RELEASE.jar:5.0.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:388) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234) [spring-boot-2.0.0.RELEASE.jar:2.0.0.RELEASE]
+	at com.dov.pass.SampleController.main(SampleController.java:8) [classes/:na]
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1021) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at java.base/sun.nio.ch.Net.bind0(Native Method) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:433) ~[na:na]
+	at java.base/sun.nio.ch.Net.bind(Net.java:425) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225) ~[na:na]
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:na]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1150) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018) ~[tomcat-embed-core-8.5.28.jar:8.5.28]
+	... 14 common frames omitted
+
+2018-06-19 11:45:33.916  INFO 5383 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2018-06-19 11:45:33.970  INFO 5383 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-06-19 11:45:33.984  INFO 5383 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-06-19 11:48:20.658  INFO 5714 --- [main] com.dov.pass.SampleController            : Starting SampleController on null with PID 5714 (/home/dov/IdeaProjects/passbean/out/production/classes started by dov in /home/dov/IdeaProjects/passbean)
+2018-06-19 11:48:20.670  INFO 5714 --- [main] com.dov.pass.SampleController            : No active profile set, falling back to default profiles: default
+2018-06-19 11:48:20.909  INFO 5714 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@74bf1791: startup date [Tue Jun 19 11:48:20 EEST 2018]; root of context hierarchy
+2018-06-19 11:48:24.995  INFO 5714 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e3cd619b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-19 11:48:25.746  INFO 5714 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-19 11:48:25.805  INFO 5714 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-19 11:48:25.806  INFO 5714 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-19 11:48:25.821  INFO 5714 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-06-19 11:48:26.074  INFO 5714 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-19 11:48:26.076  INFO 5714 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5167 ms
+2018-06-19 11:48:27.803  INFO 5714 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-19 11:48:27.811  INFO 5714 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-19 11:48:27.813  INFO 5714 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-19 11:48:27.814  INFO 5714 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-19 11:48:27.814  INFO 5714 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-19 11:48:27.815  INFO 5714 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-06-19 11:48:27.816  INFO 5714 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-06-19 11:48:27.995  INFO 5714 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-19 11:48:28.351  INFO 5714 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc4.Jdbc4Connection.getNetworkTimeout() is not yet implemented.)
+2018-06-19 11:48:28.590  INFO 5714 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-19 11:48:28.684  INFO 5714 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:48:28.708  INFO 5714 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-19 11:48:28.861  INFO 5714 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2018-06-19 11:48:28.864  INFO 5714 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-19 11:48:28.935  INFO 5714 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-19 11:48:29.134  INFO 5714 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-19 11:48:29.164  INFO 5714 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-19 11:48:29.169  INFO 5714 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5ac53c06
+2018-06-19 11:48:33.531  INFO 5714 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:48:34.642  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@74bf1791: startup date [Tue Jun 19 11:48:20 EEST 2018]; root of context hierarchy
+2018-06-19 11:48:34.721  WARN 5714 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-19 11:48:34.800  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/addempl],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public void com.dov.pass.Controller.Connect.addempl(java.lang.String,java.lang.String)
+2018-06-19 11:48:34.805  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getById],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.Connect.getById(java.lang.Integer)
+2018-06-19 11:48:34.807  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getlogin],methods=[POST]}" onto public void com.dov.pass.Controller.Connect.login(java.lang.String,java.lang.String)
+2018-06-19 11:48:34.810  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.getData(java.lang.String)
+2018-06-19 11:48:34.812  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/loginbyemail],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.login(java.lang.String)
+2018-06-19 11:48:34.818  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.testController.getData(java.lang.String)
+2018-06-19 11:48:34.819  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getToken]}" onto public java.lang.String com.dov.pass.Controller.testController.getToken()
+2018-06-19 11:48:34.820  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/testmail]}" onto public void com.dov.pass.Controller.testController.testmail()
+2018-06-19 11:48:34.822  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/test],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.testController.test()
+2018-06-19 11:48:34.832  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:48:34.833  INFO 5714 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-19 11:48:35.023  INFO 5714 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:48:35.024  INFO 5714 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:48:35.162  INFO 5714 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:48:35.216  INFO 5714 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-06-19 11:48:36.159  INFO 5714 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:48:36.162  INFO 5714 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:48:36.165  INFO 5714 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:48:36.595  INFO 5714 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-19 11:48:36.599  INFO 5714 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-19 11:48:36.630  INFO 5714 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-19 11:48:36.726  INFO 5714 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-19 11:48:36.734  INFO 5714 --- [main] com.dov.pass.SampleController            : Started SampleController in 17.736 seconds (JVM running for 20.186)
+2018-06-19 11:48:39.834  INFO 5714 --- [RMI TCP Connection(9)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-19 11:48:39.837  INFO 5714 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-19 11:48:39.886  INFO 5714 --- [RMI TCP Connection(9)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2018-06-19 11:48:57.476  INFO 5714 --- [http-nio-127.0.0.1-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-19 11:50:03.098  INFO 5714 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-06-19 11:50:03.120  INFO 5714 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-06-19 11:50:15.139  INFO 6000 --- [main] com.dov.pass.SampleController            : Starting SampleController on null with PID 6000 (/home/dov/IdeaProjects/passbean/out/production/classes started by dov in /home/dov/IdeaProjects/passbean)
+2018-06-19 11:50:15.145  INFO 6000 --- [main] com.dov.pass.SampleController            : No active profile set, falling back to default profiles: default
+2018-06-19 11:50:15.387  INFO 6000 --- [main] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19c65cdc: startup date [Tue Jun 19 11:50:15 EEST 2018]; root of context hierarchy
+2018-06-19 11:50:19.522  INFO 6000 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9ef1d856] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-06-19 11:50:20.263  INFO 6000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-06-19 11:50:20.315  INFO 6000 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-06-19 11:50:20.316  INFO 6000 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.28
+2018-06-19 11:50:20.331  INFO 6000 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2018-06-19 11:50:20.582  INFO 6000 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-06-19 11:50:20.584  INFO 6000 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5198 ms
+2018-06-19 11:50:22.203  INFO 6000 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-06-19 11:50:22.211  INFO 6000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-06-19 11:50:22.212  INFO 6000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-06-19 11:50:22.213  INFO 6000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-06-19 11:50:22.214  INFO 6000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-06-19 11:50:22.214  INFO 6000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpTraceFilter' to: [/*]
+2018-06-19 11:50:22.215  INFO 6000 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2018-06-19 11:50:22.404  INFO 6000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-06-19 11:50:22.732  INFO 6000 --- [main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc4.Jdbc4Connection.getNetworkTimeout() is not yet implemented.)
+2018-06-19 11:50:22.927  INFO 6000 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-06-19 11:50:23.027  INFO 6000 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:50:23.050  INFO 6000 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-06-19 11:50:23.202  INFO 6000 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.2.16.Final}
+2018-06-19 11:50:23.205  INFO 6000 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2018-06-19 11:50:23.339  INFO 6000 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2018-06-19 11:50:23.547  INFO 6000 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2018-06-19 11:50:23.582  INFO 6000 --- [main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+2018-06-19 11:50:23.587  INFO 6000 --- [main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@653fb8d1
+2018-06-19 11:50:31.893  INFO 6000 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-06-19 11:50:33.665  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@19c65cdc: startup date [Tue Jun 19 11:50:15 EEST 2018]; root of context hierarchy
+2018-06-19 11:50:33.747  WARN 6000 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-06-19 11:50:33.824  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/addempl],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public void com.dov.pass.Controller.Connect.addempl(java.lang.String,java.lang.String)
+2018-06-19 11:50:33.829  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getById],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.Connect.getById(java.lang.Integer)
+2018-06-19 11:50:33.830  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/connect/getlogin],methods=[POST]}" onto public void com.dov.pass.Controller.Connect.login(java.lang.String,java.lang.String)
+2018-06-19 11:50:33.834  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.getData(java.lang.String)
+2018-06-19 11:50:33.836  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/api/loginbyemail],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.api.login(java.lang.String)
+2018-06-19 11:50:33.842  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getData],methods=[POST]}" onto public java.lang.String com.dov.pass.Controller.testController.getData(java.lang.String)
+2018-06-19 11:50:33.843  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/getToken]}" onto public java.lang.String com.dov.pass.Controller.testController.getToken()
+2018-06-19 11:50:33.845  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/testmail]}" onto public void com.dov.pass.Controller.testController.testmail()
+2018-06-19 11:50:33.846  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/test],methods=[GET]}" onto public java.lang.String com.dov.pass.Controller.testController.test()
+2018-06-19 11:50:33.857  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:50:33.859  INFO 6000 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-06-19 11:50:33.988  INFO 6000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:50:33.990  INFO 6000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:50:34.136  INFO 6000 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-06-19 11:50:34.199  INFO 6000 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2018-06-19 11:50:35.152  INFO 6000 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:50:35.154  INFO 6000 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2018-06-19 11:50:35.157  INFO 6000 --- [main] s.b.a.e.w.s.WebMvcEndpointHandlerMapping : Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-06-19 11:50:35.530  INFO 6000 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-06-19 11:50:35.534  INFO 6000 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-06-19 11:50:35.559  INFO 6000 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-06-19 11:50:35.651  INFO 6000 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-06-19 11:50:35.659  INFO 6000 --- [main] com.dov.pass.SampleController            : Started SampleController in 21.994 seconds (JVM running for 23.893)
+2018-06-19 11:50:38.841  INFO 6000 --- [RMI TCP Connection(16)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-06-19 11:50:38.847  INFO 6000 --- [RMI TCP Connection(16)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-06-19 11:50:38.879  INFO 6000 --- [RMI TCP Connection(16)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2018-06-19 11:50:45.814  INFO 6000 --- [http-nio-127.0.0.1-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2018-06-19 11:51:04.973  INFO 6000 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-06-19 11:51:04.987  INFO 6000 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-06-19 11:58:02.253  INFO 3282 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-06-19 11:58:02.437  INFO 3282 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -4,10 +4,12 @@ import com.dov.pass.dao.Unit;
 import com.dov.pass.dao.unitInterface;
 import com.dov.pass.service.Mail;
 import com.dov.pass.service.Token;
+import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
@@ -19,6 +21,8 @@ public class testController {
     @Autowired
     Mail mail;
     Unit unit = new Unit();
+    Gson gson = new Gson();
+
 
     @RequestMapping(path = "test",
             method = RequestMethod.GET)
@@ -46,5 +50,13 @@ public class testController {
 
         mail.sendMail(from, to, subject, body);
     }
+
+    @RequestMapping(path = "getData",
+            method = RequestMethod.POST)
+    @ResponseBody
+    public String getData(@RequestParam("e") String token){
+        return gson.toJson(ui.getEntityByHash(token));
+    }
+
 
 }

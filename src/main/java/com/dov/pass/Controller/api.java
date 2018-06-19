@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.NoResultException;
 import javax.validation.constraints.Email;
 
 @Controller
@@ -53,7 +54,20 @@ public class api {
                     method = RequestMethod.POST)
     @ResponseBody
     public String getData(@RequestParam("e") String token){
-        return gson.toJson(ui.getEntityByHash(token));
+        try {
+            unit = ui.getEntityByHash(token);
+        }
+        catch (NoResultException e){
+            return "{\"status\":\"404\", \"massage\": \"Can't found that entity\"}";
+        }
+        return gson.toJson(unit);
+    }
+    @RequestMapping(path = "persistData",
+                    method = RequestMethod.POST)
+    @ResponseBody
+    public String persistData(@RequestBody String data){
+        unit = gson.fromJson(data, Unit.class);
+
     }
 
 
