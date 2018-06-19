@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "unit", schema = "test")
+@Table(name = "unit", schema = "passbean")
 public class Unit {
 
 
@@ -21,14 +21,14 @@ public class Unit {
     @NotNull
     @Column(name="email",unique = true,nullable = false)
     private String email;
+    
+    @Column(name = "data",nullable = false)
+    private String data;
 
     @NotNull
     @Column(name = "hash",length = 64)
     private String hash;
 
-    @NotEmpty
-    @Column(name = "data",nullable = false)
-    private String data;
 
     public int getId() {
         return id;

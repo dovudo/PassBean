@@ -30,7 +30,6 @@ public class Mail {
         javaMailSender.send(mail);
 
         logger.info("Done!");
-
     }
 }
 

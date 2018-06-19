@@ -26,8 +26,15 @@ public class unitService implements unitInterface {
     }
 
     @Override
-    public Unit getByEmail(String email) throws NoResultException, Exception{
-        return (Unit) em.createQuery("SELECT u FROM Unit u WHERE u.email = :findemail").setParameter("findemail", email).getSingleResult();
+    public Unit getByEmail(String email) {
+        try {
+            return (Unit) em.createQuery("SELECT u FROM Unit u WHERE u.email = :findemail").setParameter("findemail", email).getSingleResult();
+        }
+        catch (NoResultException e){
+            Unit u = new Unit();
+            u.setEmail(email);
+            return u;
+        }
     }
 
 
@@ -47,11 +54,13 @@ public class unitService implements unitInterface {
 
     public boolean checkExistByHash(String hash){
         try{
-            em.createQuery("SELECT u FROM Unit u WHERE u.hash = :h").setParameter("h", hash).getSingleResult();
+            if(em.createQuery("SELECT u FROM Unit u WHERE u.hash = :h").setParameter("h", hash).getSingleResult() != null){
+                return true;
+            }
+                    else return false;
         }
         catch (NoResultException e){
             return false;
         }
-        return true;
     }
 }

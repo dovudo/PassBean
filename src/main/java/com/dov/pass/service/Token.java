@@ -9,29 +9,19 @@ import java.util.Random;
 
 public class Token {
 
-    private static String ip = null;
-
     @Autowired
     private static unitInterface ui;
-
-    static {
-        try {
-            ip = InetAddress.getLocalHost().getHostAddress();
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
-    }
 
     public static String getToken(int leg){
         String ourToken = getRndString(leg);
         //Check collision
-        if(ui.checkExistByHash(ourToken) == false)
-        getToken(leg);
-        return ip + "/#" + ourToken;
+        //if(ui.checkExistByHash(ourToken) != true)
+        //getToken(leg);
+        return  ourToken;
     }
 
     //Generate some random token
-    public static String getRndString(Integer lenght) {
+    private static String getRndString(Integer lenght) {
         String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZqwertyuiopasdfghjklzxcvbnm1234567890";
         StringBuilder salt = new StringBuilder();
         Random rnd = new Random();
