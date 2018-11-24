@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -17,7 +18,7 @@ public class MailService {
     private SimpleMailMessage message = new SimpleMailMessage();
     private String link = "http://192.168.102/";
 
-    public void send_mail(String email){
+    void send_mail(String email){
         message.setFrom("dk6coqznk7gy3ymx@ethereal.email");
         message.setTo(email);
         message.setSubject("PassBean corporation");
@@ -26,7 +27,7 @@ public class MailService {
         log.info("Have a sending massage to " + email);
     }
 
-    public void send_mail(String email, String token){
+    void send_mail(String email, String token){
         message.setFrom("dk6coqznk7gy3ymx@ethereal.email");
         message.setTo(email);
         message.setSubject("PassBean corporation");

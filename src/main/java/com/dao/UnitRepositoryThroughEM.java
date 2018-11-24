@@ -11,7 +11,7 @@ import javax.transaction.Transactional;
 
 @Transactional
 @Repository("Unit")
-public class Repositories implements RepositoryInterface {
+public class UnitRepositoryThroughEM {
 
     @PersistenceContext
     private EntityManager em;
@@ -29,7 +29,6 @@ public class Repositories implements RepositoryInterface {
         return null;
     }
 
-    @Override
     public Unit findByToken(String token){
         return em.getReference(Unit.class, Long.getLong(token));
     }

@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PassBean.iml" filepath="$PROJECT_DIR$/.idea/PassBean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.genby.passbean.passbean.iml" filepath="$PROJECT_DIR$/.idea/modules/com.genby.passbean.passbean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.genby.passbean.passbean.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.genby.passbean.passbean.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.genby.passbean.passbean.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.genby.passbean.passbean.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/passbean_main.iml" filepath="$PROJECT_DIR$/.idea/modules/passbean_main.iml" />
     </modules>
   </component>
 </project>

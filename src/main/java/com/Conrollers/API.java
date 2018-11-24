@@ -1,5 +1,6 @@
 package com.Conrollers;
 
+import ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy;
 import com.Model.Unit;
 import com.Service.TimeService;
 import com.Service.UnitService;
@@ -10,6 +11,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.mail.MailSendException;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.*;
 
 @CrossOrigin
@@ -20,9 +22,9 @@ public class API {
     private UnitService us;
     private static final Logger logs = LoggerFactory.getLogger(API.class);
     private String email;
-    public static final String STATUS_0 = "{\"status\":\"0\"} ";
-    public static final String STATUS_1 = "{\"status\":\"Invalid address\"}";
-    public static final String STATUS_2 = "{\"status\":\"Something happened wrong!\"}";
+    private static final String STATUS_0 = "{\"status\":\"0\"} ";
+    private static final String STATUS_1 = "{\"status\":\"Invalid address\"}";
+    private static final String STATUS_2 = "{\"status\":\"Something happened wrong!\"}";
     /*
 
     This method parse json object,
@@ -60,6 +62,14 @@ public class API {
         logs.info("Getting data of " + out);
         return out;
     }
+
+    @PutMapping("/dog")
+    public String getUnit(@RequestBody String unit_json){
+        String out = us.save(unit_json);
+        logs.info("Saving unit as " + out);
+        return out;
+    }
+
 
 
 /*

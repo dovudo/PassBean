@@ -1,17 +1,35 @@
-
 package com;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
-import org.springframework.web.servlet.config.annotation.*;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.resource.PathResourceResolver;
 
 import java.io.IOException;
 
+@SpringBootApplication
+public class AppBoot {
+    public static void main(String[] args) {
+        SpringApplication.run(AppBoot.class,args);
+    }
+}
+
+
 /*
-* This code redirected all links on index.html
-* For Angular
-* */
+ * Configuration for correctly working with Angular
+ * and auto routing controllers inside Angular methods
+ * In this case the code redirected all links on index.html/*
+ * This actually important code field
+ * Do not remove that while you use Angular
+ * Warning: might be some troubles with spring controllers
+ * Check @Controller
+ *
+ * */
 @Configuration
 class WebMvcConfig implements WebMvcConfigurer {
     @Override

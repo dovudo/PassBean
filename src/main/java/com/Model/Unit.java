@@ -13,16 +13,16 @@ public class Unit {
     private long id;
 
     @Column(name = "email", unique = true, nullable = false,length = 64)
-    String email;
+    private String email;
 
-    @Column(name = "data", length = 2048, nullable = true)
-    String data;
+    @Column(name = "data", length = 2048)
+    private String data;
 
-    @Column(name = "token", unique = true,nullable = true, length = 256)
-    String token = null;
+    @Column(name = "token", unique = true, length = 256)
+    private String token = null;
 
     @Column(name = "timestamp")
-    long timestamp;
+    private long timestamp;
 
     public long getId() {
         return id;
@@ -62,5 +62,16 @@ public class Unit {
 
     public void setTimestamp(long timestamp) {
         this.timestamp = timestamp;
+    }
+
+    @Override
+    public String toString() {
+        return "Unit{" +
+                "id=" + id +
+                ", email='" + email + '\'' +
+                ", data='" + data + '\'' +
+                ", token='" + token + '\'' +
+                ", timestamp=" + timestamp +
+                '}';
     }
 }

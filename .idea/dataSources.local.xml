@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="postgres@35.187.36.157" uuid="ed210b40-9254-43bd-9011-e5d9d721f671">
+    <data-source name="postgres@35.187.36.157" uuid="34828ba2-e3d4-47f3-ab53-5fb870b2a669">
       <database-info product="PostgreSQL" version="9.6.6" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2" family="POSTGRES" exact-version="9.6.6">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <introspection-schemas>postgres:passbean,public,test</introspection-schemas>
+      <introspection-schemas>@:@</introspection-schemas>
     </data-source>
-    <data-source name="postgres@localhost" uuid="a4ff27ac-18f3-47fa-af7c-c41de3923e4e">
+    <data-source name="postgres@localhost" uuid="cde77206-58e2-48cf-9e41-5b4f0541fc2f">
       <database-info product="PostgreSQL" version="11.1 (Debian 11.1-1.pgdg90+1)" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.2" family="POSTGRES" exact-version="11.1">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
       <user-name>postgres</user-name>
-      <introspection-schemas>@:@</introspection-schemas>
+      <introspection-schemas>@:@|postgres:passbean</introspection-schemas>
     </data-source>
   </component>
 </project>
