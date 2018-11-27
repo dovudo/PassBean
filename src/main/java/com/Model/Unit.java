@@ -15,8 +15,8 @@ public class Unit {
     @Column(name = "email", unique = true, nullable = false,length = 64)
     private String email;
 
-    @Column(name = "data", length = 2048)
-    private String data;
+    @Column(name = "data")
+    private String data = "[]";
 
     @Column(name = "token", unique = true, length = 256)
     private String token = null;
@@ -55,6 +55,15 @@ public class Unit {
     public void setToken(String token) {
         this.token = token;
     }
+
+    public Unit(String email,String data,String token, long time){
+        setEmail(email);
+        setData(data);
+        setToken(token);
+        setTimestamp(time);
+    }
+
+    public Unit(){}
 
     public long getTimestamp() {
         return timestamp;

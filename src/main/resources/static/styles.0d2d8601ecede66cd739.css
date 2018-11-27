@@ -1,4 +1,4 @@
-app-dash-page{display:flex;flex-grow:1}/*!
+@-webkit-keyframes show{from{opacity:0}to{opacity:1}}@keyframes show{from{opacity:0}to{opacity:1}}.loader,app-login-page,app-navbar,app-unit,app-unit-page,app-units-page,h3{-webkit-animation:1s show;animation:1s show}/*!
  * Bootstrap v4.1.3 (https://getbootstrap.com/)
  * Copyright 2011-2018 The Bootstrap Authors
  * Copyright 2011-2018 Twitter, Inc.
