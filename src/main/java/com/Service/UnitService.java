@@ -43,12 +43,11 @@ public class UnitService {
         JsonObject json = new Gson().fromJson(some_data_json, JsonObject.class);
 
         if (!json.isJsonNull()) {
-
             if (json.has("email")) {
                 email = json.get("email").getAsString();
                 token = ts.gen_token();
                 unit = repository.findByEmail(email);
-                if(unit == null) unit = new Unit();
+                if (unit == null) unit = new Unit();
                 unit.setToken(token);
                 unit.setEmail(email);
                 unit.setTimestamp(TimeService.get_timestamp_long());
@@ -56,7 +55,17 @@ public class UnitService {
                 repository.save(unit);
                 return HttpStatus.OK.toString();
             }
+        }
+        return HttpStatus.BAD_REQUEST.toString();
+    }
 
+    public String takeData(String some_data_json){
+
+        JsonObject json = new Gson().fromJson(some_data_json, JsonObject.class);
+        String token;
+        Unit unit;
+
+        if (!json.isJsonNull()) {
             if (json.has("token")) {
                 token = json.get("token").getAsString();
                 unit = repository.findByToken(token);

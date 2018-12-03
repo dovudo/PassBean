@@ -1,5 +1,6 @@
 package com.Conrollers;
 
+import com.Service.TimeService;
 import com.google.gson.stream.MalformedJsonException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,9 +15,9 @@ import javax.persistence.EntityNotFoundException;
 @ControllerAdvice
 public class ExceptionBrain {
 
-    private static final String STATUS_0 = "{\"status\":\"0\"} ";
-    private static final String STATUS_1 = "{\"status\":\"Invalid address\"}";
-    private static final String STATUS_2 = "{\"status\":\"Something happened wrong!\"}";
+    public static final String STATUS_0 = "{\"status\":\"0\", \"timestamp\":\"" + TimeService.get_timestamp_str() +"\"} ";
+    public static final String STATUS_1 = "{\"status\":\"Invalid address\"}";
+    public static final String STATUS_2 = "{\"status\":\"Something going wrong!\"}";
     public static final String STATUS_4 = "{\"status\":\"Invalid token\", " +
             "\"msg\":\"You need get " +
             "login\"}";
