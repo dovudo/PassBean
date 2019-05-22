@@ -60,6 +60,7 @@ public class TestControllers {
     public void checkPutDataController() throws Exception {
         Unit unit = rep.findByEmail(email);
         unit.setData(test_text);
+        //rep.save(unit);
         String out = new Gson().toJson(unit);
         mockMvc.perform(put("/data")
         .contentType(MediaType.APPLICATION_JSON)
