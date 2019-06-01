@@ -1,3 +1,2 @@
-This project more like portfolio
-but if it will take up, 
-    i guess it awesome.
+# About project.
+Service for store your passwords with synchronization to database through own encrypting.
